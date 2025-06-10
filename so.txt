@@ -1,1 +1,1 @@
-socks5://shine:amwjatihc123@192.168.3.116:10086?name=GLOBAL&udp=true
+
