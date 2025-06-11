@@ -23,7 +23,7 @@ proxy-groups:
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
   - DOMAIN-SUFFIX,qichiyu.com,代理♻️
-  - RULE-SET,private_domain,直连
+  - RULE-SET,private_domain,直连🇨🇳
   - RULE-SET,apple_domain,大厂-Apple🍎
   - RULE-SET,proxylite,代理♻️
   - RULE-SET,ai,AI-ChatGPT💡
