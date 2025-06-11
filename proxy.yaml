@@ -30,7 +30,7 @@ proxy-groups:
       - 🚀 全局代理
       - DIRECT
       - REJECT
-  - name: 🤖 AI
+  - name: AI 🤖
     type: select
     proxies:
       - 🚀 全局代理
