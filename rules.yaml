@@ -21,8 +21,7 @@ proxy-groups:
   - {name: 大厂-OneDrive🐬, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
   - {name: 代码-GitHub👨🏿‍💻, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
   - {name: 娱乐-游戏平台🎮, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
-  - {name: GLOBAL, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔]}
- # - {name: ALL🌐, type: select, include-all: false}
+  - {name: GLOBAL, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
 
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
