@@ -24,6 +24,7 @@ proxy-groups:
 rules:
   - DOMAIN-SUFFIX,qichiyu.com,代理♻️
   - RULE-SET,private_domain,直连🇨🇳
+  - DOMAIN-SUFFIX,docker.io,代理♻️
   - RULE-SET,apple_domain,大厂-Apple🍎
   - RULE-SET,proxylite,代理♻️
   - RULE-SET,ai,AI-ChatGPT💡
