@@ -1,7 +1,7 @@
 proxies:
   - {name: 代理♻️, type: socks5, server: , port: , username: , password: }
-  - {name: 直连🇨🇳🇨🇳, type: direct}
-  - {name: 拒绝⛔️⛔️, type: reject}
+  - {name: 直连🇨🇳, type: direct}
+  - {name: 拒绝⛔️, type: reject}
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
   - {name: 直连🇨🇳🇨🇳, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
