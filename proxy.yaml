@@ -12,7 +12,7 @@ proxy-groups:
       - 🚀 全局代理
       - DIRECT
       - REJECT
-  - name: ♻️ 测速
+  - name: 测速 ♻️
     type: select
     proxies:
       - 🚀 全局代理
