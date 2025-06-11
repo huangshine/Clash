@@ -1,49 +1,50 @@
 proxies:
-  - {name: 默认, type: socks5, server: , port: , username: , password: }
-  - {name: 直连, type: direct}
-  - {name: 拒绝, type: reject}
+  - {name: 代理♻️, type: socks5, server: , port: , username: , password: }
+  - {name: 直连🇨🇳, type: direct}
+  - {name: 拒绝⛔️, type: reject}
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
-  - {name: 📹 YouTube, type: select, proxies: [默认, 直连, 拒绝]}
-  - {name: 🍀 Google, type: select, proxies: [默认, 直连, 拒绝]}
-  - {name: 🤖 ChatGPT, type: select, proxies: [默认, 直连, 拒绝]}
-  - {name: 👨🏿‍💻 GitHub, type: select, proxies: [默认, 直连, 拒绝]}
-  - {name: 🐬 OneDrive, type: select, proxies: [默认, 直连, 拒绝]}
-  - {name: 🪟 Microsoft, type: select, proxies: [默认, 直连, 拒绝]}
-  - {name: 🎵 TikTok, type: select, proxies: [默认, 直连, 拒绝]}
-  - {name: 📲 Telegram, type: select, proxies: [默认, 直连, 拒绝]}
-  - {name: 🎥 NETFLIX, type: select, proxies: [默认, 直连, 拒绝]}
-  - {name: ✈️ Speedtest, type: select, proxies: [默认, 直连, 拒绝]}
-  - {name: 💶 PayPal, type: select, proxies: [默认, 直连, 拒绝]}
-  - {name: 🍎 Apple, type: select, proxies: [默认, 直连, 拒绝]}
-  - {name: 🎯 直连, type: select, proxies: [默认, 直连, 拒绝]}
+  - {name: 直连🇨🇳, type: select, proxies: [默认, 直连, 拒绝]}
+  - {name: 测速-Speedtest✈️, type: select, proxies: [默认, 直连, 拒绝]}
+
+  - {name: 影音-YouTube🎬, type: select, proxies: [默认, 直连, 拒绝]}
+  - {name: 影音-TikTok🎵, type: select, proxies: [默认, 直连, 拒绝]}
+  - {name: 影音-奈飞🎥, type: select, proxies: [默认, 直连, 拒绝]}
+  - {name: AI-ChatGPT💡, type: select, proxies: [默认, 直连, 拒绝]}
+  - {name: 通信-Telegram📲, type: select, proxies: [默认, 直连, 拒绝]}
+  - {name: 金融-加密货币🏦, type: select, proxies: [默认, 直连, 拒绝]}
+  - {name: 大厂-Apple🍎, type: select, proxies: [默认, 直连, 拒绝]}
+  - {name: 大厂-微软🪟, type: select, proxies: [默认, 直连, 拒绝]}
+  - {name: 大厂-Google🍀, type: select, proxies: [默认, 直连, 拒绝]}
+  - {name: 大厂-OneDrive🐬, type: select, proxies: [默认, 直连, 拒绝]}
+  - {name: 代码-GitHub👨🏿‍💻, type: select, proxies: [默认, 直连, 拒绝]}
   - {name: GLOBAL, type: select, proxies: [默认, 直连, 拒绝]}
 
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
-  - DOMAIN-SUFFIX,qichiyu.com,默认
-  - RULE-SET,private_domain,直连
-  - RULE-SET,apple_domain,🍎 Apple
-  - RULE-SET,proxylite,默认
-  - RULE-SET,ai,🤖 ChatGPT
-  - RULE-SET,github_domain,👨🏿‍💻 GitHub
-  - RULE-SET,youtube_domain,📹 YouTube
-  - RULE-SET,google_domain,🍀 Google
-  - RULE-SET,onedrive_domain,🐬 OneDrive
-  - RULE-SET,microsoft_domain,🪟 Microsoft
-  - RULE-SET,tiktok_domain,🎵 TikTok
-  - RULE-SET,speedtest_domain,✈️ Speedtest
-  - RULE-SET,telegram_domain,📲 Telegram
-  - RULE-SET,netflix_domain,🎥 NETFLIX
-  - RULE-SET,paypal_domain,💶 PayPal
-  - RULE-SET,gfw_domain,默认
-  - RULE-SET,geolocation-!cn,默认
-  - RULE-SET,cn_domain,🎯 直连
-  - RULE-SET,google_ip,🍀 Google,no-resolve
-  - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve
-  - RULE-SET,telegram_ip,📲 Telegram,no-resolve
-  - RULE-SET,cn_ip,🎯 直连
+  - DOMAIN-SUFFIX,qichiyu.com,代理♻️
+  - RULE-SET,private_domain,直连🇨🇳
+  - RULE-SET,apple_domain,大厂-Apple🍎
+  - RULE-SET,proxylite,代理♻️
+  - RULE-SET,ai,AI-ChatGPT💡
+  - RULE-SET,github_domain,代码-GitHub👨🏿‍💻
+  - RULE-SET,youtube_domain,影音-YouTube🎬
+  - RULE-SET,google_domain,大厂-Google🍀
+  - RULE-SET,onedrive_domain,大厂-OneDrive🐬
+  - RULE-SET,microsoft_domain,大厂-微软🪟
+  - RULE-SET,tiktok_domain,影音-TikTok🎵
+  - RULE-SET,speedtest_domain,测速-Speedtest✈️
+  - RULE-SET,telegram_domain,通信-Telegram📲
+  - RULE-SET,netflix_domain,影音-奈飞🎥
+  - RULE-SET,paypal_domain,金融-加密货币🏦
+  - RULE-SET,gfw_domain,代理♻️
+  - RULE-SET,geolocation-!cn,代理♻️
+  - RULE-SET,cn_domain,直连🇨🇳
+  - RULE-SET,google_ip,大厂-Google🍀,no-resolve
+  - RULE-SET,netflix_ip,影音-奈飞🎥,no-resolve
+  - RULE-SET,telegram_ip,通信-Telegram📲,no-resolve
+  - RULE-SET,cn_ip,直连🇨🇳
   - MATCH, GLOBAL
 
 # 规则集
