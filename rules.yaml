@@ -24,7 +24,7 @@ proxy-groups:
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
   - DOMAIN-SUFFIX,qichiyu.com,代理♻️
-  - RULE-SET,private_domain,直连🇨🇳🇨🇳
+  - RULE-SET,private_domain,直连🇨🇳
   - RULE-SET,apple_domain,大厂-Apple🍎
   - RULE-SET,proxylite,代理♻️
   - RULE-SET,ai,AI-ChatGPT💡
@@ -40,11 +40,11 @@ rules:
   - RULE-SET,paypal_domain,金融-加密货币🏦
   - RULE-SET,gfw_domain,代理♻️
   - RULE-SET,geolocation-!cn,代理♻️
-  - RULE-SET,cn_domain,直连🇨🇳🇨🇳
+  - RULE-SET,cn_domain,直连🇨🇳
   - RULE-SET,google_ip,大厂-Google🍀,no-resolve
   - RULE-SET,netflix_ip,影音-奈飞🎥,no-resolve
   - RULE-SET,telegram_ip,通信-Telegram📲,no-resolve
-  - RULE-SET,cn_ip,直连🇨🇳🇨🇳
+  - RULE-SET,cn_ip,直连🇨🇳
   - MATCH, GLOBAL
 
 # 规则集
