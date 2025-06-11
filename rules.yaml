@@ -29,6 +29,7 @@ rules:
 #域名规则
   - RULE-SET,proxylite_class,代理♻️
   - DOMAIN-SUFFIX,qichiyu.com,代理♻️
+  - DOMAIN-SUFFIX,docker.io,代理♻️
   - RULE-SET,private_domain,直连🇨🇳
   - RULE-SET,speedtest_domain,工具-Speedtest✈️
   - RULE-SET,netflix_domain,影音-奈飞🎥
