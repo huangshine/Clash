@@ -29,7 +29,6 @@ rules:
   - RULE-SET,private_domain,直连🇨🇳
   - DOMAIN-SUFFIX,docker.io,代理♻️
   - RULE-SET,apple_domain,大厂-Apple🍎
-  - RULE-SET,proxylite,代理♻️
   - RULE-SET,ai,AI-ChatGPT💡
   - RULE-SET,github_domain,代码-GitHub👨🏿‍💻
   - RULE-SET,youtube_domain,影音-YouTube🎬
