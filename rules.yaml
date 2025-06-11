@@ -4,7 +4,7 @@ proxies:
   - {name: 拒绝⛔️, type: reject}
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
-  - {name: 直连🇨🇳🇨🇳, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
+  - {name: 直连🇨🇳, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
   - {name: 测速-Speedtest✈️, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
 
   - {name: 影音-YouTube🎬, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
