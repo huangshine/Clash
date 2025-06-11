@@ -12,16 +12,19 @@ proxy-groups:
   - {name: AI-ChatGPT💡, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
   - {name: 通信-Telegram📲, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
   - {name: 金融-加密货币🏦, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
+  - {name: 金融-PayPal💶, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
   - {name: 大厂-Apple🍎, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
   - {name: 大厂-微软🪟, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
   - {name: 大厂-Google🍀, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
   - {name: 大厂-OneDrive🐬, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
   - {name: 代码-GitHub👨🏿‍💻, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
+  - {name: 娱乐-游戏平台🎮, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
   - {name: GLOBAL, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
 
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
+  - RULE-SET,proxylite_class,代理♻️
   - DOMAIN-SUFFIX,qichiyu.com,代理♻️
   - RULE-SET,private_domain,直连🇨🇳
   - DOMAIN-SUFFIX,docker.io,代理♻️
@@ -37,8 +40,12 @@ rules:
   - RULE-SET,speedtest_domain,测速-Speedtest✈️
   - RULE-SET,telegram_domain,通信-Telegram📲
   - RULE-SET,netflix_domain,影音-奈飞🎥
-  - RULE-SET,paypal_domain,金融-加密货币🏦
-  - RULE-SET,Crypto,金融-加密货币🏦
+  - RULE-SET,paypal_domain,金融-PayPal💶
+  - RULE-SET,Crypto_class,金融-加密货币🏦
+  - RULE-SET,gfw_domain,代理♻️
+  - RULE-SET,game_class,娱乐-游戏平台🎮
+
+#IP规则
   - RULE-SET,gfw_domain,代理♻️
   - RULE-SET,geolocation-!cn,代理♻️
   - RULE-SET,cn_domain,直连⭕️
@@ -54,16 +61,21 @@ rule-anchor:
   domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
+  proxylite_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/ProxyLite.list"}
+  Crypto_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Crypto.list"}
+  game_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list"}
+  game_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list"}
+  game_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list"}
+  game_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list"}
+  game_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list"}
   private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
-  proxylite: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/ProxyLite.list"}
-  ai: {  <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs" }
+  ai_domain: {  <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs" }
   youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
   github_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
   telegram_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
   netflix_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
   paypal_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"}
-  Crypto: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Crypto.list"}
   onedrive_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
   microsoft_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
   apple_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs"}
