@@ -6,7 +6,6 @@ proxies:
 proxy-groups:
   - {name: 直连⭕️, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
   - {name: 测速-Speedtest✈️, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
-
   - {name: 影音-YouTube🎬, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
   - {name: 影音-TikTok🎵, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
   - {name: 影音-奈飞🎥, type: select, proxies: [代理♻️, 直连🇨🇳, 拒绝⛔️]}
