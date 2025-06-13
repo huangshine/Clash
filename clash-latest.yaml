@@ -31,30 +31,29 @@ rules:
 #域名规则
   - RULE-SET,docker_class,docker
   - RULE-SET,proxylite_class,代理🟢
-  - DOMAIN-SUFFIX,qichiyu.com,代理🟢
-  - RULE-SET,private_domain,直连⭕️
-  - RULE-SET,speedtest_domain,工具-Speedtest✈️
-  - RULE-SET,ai_domain,AI-ChatGPT💡
+  - RULE-SET,private_class,直连⭕️
+  - RULE-SET,speedtest_class,工具-Speedtest✈️
+  - RULE-SET,ai_class,AI-ChatGPT💡
   - RULE-SET,Crypto_class,金融-数字货币🪙
-  - RULE-SET,telegram_domain,社交-Telegram📱
-  - RULE-SET,github_domain,代码-GitHub👨🏿‍💻
-  - RULE-SET,netflix_domain,影音-奈飞🎥
-  - RULE-SET,youtube_domain,影音-YouTube🎬
-  - RULE-SET,tiktok_domain,影音-TikTok🎵
-  - RULE-SET,google_domain,大厂-Google🍀
-  - RULE-SET,onedrive_domain,大厂-OneDrive🐬
-  - RULE-SET,paypal_domain,金融-PayPal💶
+  - RULE-SET,telegram_class,社交-Telegram📱
+  - RULE-SET,github_class,代码-GitHub👨🏿‍💻
+  - RULE-SET,netflix_class,影音-奈飞🎥
+  - RULE-SET,youtube_class,影音-YouTube🎬
+  - RULE-SET,tiktok_class,影音-TikTok🎵
+  - RULE-SET,google_class,大厂-Google🍀
+  - RULE-SET,onedrive_class,大厂-OneDrive🐬
+  - RULE-SET,paypal_class,金融-PayPal💶
   - RULE-SET,game1_class,娱乐-游戏平台🎮
   - RULE-SET,game2_class,娱乐-游戏平台🎮
   - RULE-SET,game3_class,娱乐-游戏平台🎮
   - RULE-SET,game4_class,娱乐-游戏平台🎮
   - RULE-SET,game5_class,娱乐-游戏平台🎮
-  - RULE-SET,microsoft_domain,大厂-微软🪟
-  - RULE-SET,apple_domain,大厂-Apple🍎
+  - RULE-SET,microsoft_class,大厂-微软🪟
+  - RULE-SET,apple_class,大厂-Apple🍎
 
 #IP规则
-  - RULE-SET,gfw_domain,代理🟢
-  - RULE-SET,cn_domain,国内🇨🇳
+  - RULE-SET,gfw_class,代理🟢
+  - RULE-SET,cn_class,国内🇨🇳
   - RULE-SET,cn_ip,国内🇨🇳
   - RULE-SET,google_ip,大厂-Google🍀,no-resolve
   - RULE-SET,netflix_ip,影音-奈飞🎥,no-resolve
@@ -65,7 +64,7 @@ rules:
 # 规则集
 rule-anchor:
   ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
-  domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
+  class: &class {type: http, interval: 86400, behavior: class, format: mrs}
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
   docker_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/docker.list"}
@@ -76,24 +75,24 @@ rule-providers:
   game3_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list"}
   game4_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list"}
   game5_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list"}
-  private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
-  ai_domain: {  <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs" }
-  youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
-  google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
-  github_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
-  telegram_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
-  netflix_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
-  paypal_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"}
-  onedrive_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
-  microsoft_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
-  apple_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs"}
-  speedtest_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ookla-speedtest.mrs"}
-  tiktok_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"}
-  gfw_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.mrs"}
-  geolocation-!cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
-  cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
-  cn_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
-  google_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
-  telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
-  netflix_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"}
+  private_class: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.list"}
+  ai_class: {  <<: *class, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.list" }
+  youtube_class: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.list"}
+  google_class: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.list"}
+  github_class: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.list"}
+  telegram_class: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.list"}
+  netflix_class: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.list"}
+  paypal_class: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.list"}
+  onedrive_class: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.list"}
+  microsoft_class: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.list"}
+  apple_class: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.list"}
+  speedtest_class: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ookla-speedtest.list"}
+  tiktok_class: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.list"}
+  gfw_class: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.list"}
+  geolocation-!cn: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.list"}
+  cn_class: { <<: *class, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.list"}
+  cn_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.list"}
+  google_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.list"}
+  telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.list"}
+  netflix_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.list"}
 #https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/myrules.yaml
