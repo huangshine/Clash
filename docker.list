@@ -1,0 +1,6 @@
+# > docker
+DOMAIN-SUFFIX,docker.io
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,registry-1.docker.io
+DOMAIN-SUFFIX,auth.docker.io
+DOMAIN-SUFFIX,production.cloudflare.docker.com
