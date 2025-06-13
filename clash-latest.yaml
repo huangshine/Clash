@@ -32,19 +32,19 @@ rules:
   - DOMAIN-SUFFIX,qichiyu.com,代理♻️
   - RULE-SET,private_domain,直连⭕️
   - RULE-SET,speedtest_domain,工具-Speedtest✈️
+  - RULE-SET,ai_domain,AI-ChatGPT💡
+  - RULE-SET,Crypto_class,金融-数字货币🪙
+  - RULE-SET,telegram_domain,社交-Telegram📲
+  - RULE-SET,github_domain,代码-GitHub👨🏿‍💻
   - RULE-SET,netflix_domain,影音-奈飞🎥
   - RULE-SET,youtube_domain,影音-YouTube🎬
   - RULE-SET,tiktok_domain,影音-TikTok🎵
-  - RULE-SET,apple_domain,大厂-Apple🍎
   - RULE-SET,google_domain,大厂-Google🍀
   - RULE-SET,onedrive_domain,大厂-OneDrive🐬
-  - RULE-SET,microsoft_domain,大厂-微软🪟
-  - RULE-SET,ai_domain,AI-ChatGPT💡
-  - RULE-SET,github_domain,代码-GitHub👨🏿‍💻
-  - RULE-SET,telegram_domain,社交-Telegram📲
   - RULE-SET,paypal_domain,金融-PayPal💶
-  - RULE-SET,Crypto_class,金融-数字货币🪙
   - RULE-SET,game_class,娱乐-游戏平台🎮
+  - RULE-SET,microsoft_domain,大厂-微软🪟
+  - RULE-SET,apple_domain,大厂-Apple🍎
 
 #IP规则
   - RULE-SET,gfw_domain,代理♻️
@@ -63,7 +63,7 @@ rule-anchor:
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
   proxylite_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/ProxyLite.list"}
-  Crypto_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Crypto.list"}
+  Crypto_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/Crypto.list"}
   game_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list"}
   game_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list"}
   game_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list"}
