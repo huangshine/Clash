@@ -1,58 +1,58 @@
 #节点信息
 proxies:
-  - {name: 代理♻️, type: socks5, server: , port: , username: , password: }
+  - {name: 代理🟢, type: socks5, server: , port: , username: , password: }
   - {name: 直连⭕️, type: direct}
   - {name: 拒绝⛔️, type: reject}
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
-  - {name: 国内🇨🇳, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: 工具-Speedtest✈️, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: 影音-YouTube🎬, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: 影音-TikTok🎵, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: 影音-奈飞🎥, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: AI-ChatGPT💡, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: 社交-Telegram📲, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: 金融-PayPal💶, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: 金融-数字货币🪙, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: 大厂-Apple🍎, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: 大厂-微软🪟, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: 大厂-Google🍀, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: 大厂-OneDrive🐬, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: 代码-GitHub👨🏿‍💻, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: 娱乐-游戏平台🎮, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: 其他-非CNのIP, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
-  - {name: GLOBAL, type: select, proxies: [代理♻️, 直连⭕️, 拒绝⛔️]}
+  - {name: 国内🇨🇳, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 工具-Speedtest✈️, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 影音-YouTube🎬, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 影音-TikTok🎵, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 影音-奈飞🎥, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: AI-ChatGPT💡, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 社交-Telegram📱, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 金融-PayPal💶, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 金融-数字货币🪙, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 大厂-Apple🍎, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 大厂-微软🪟, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 大厂-Google🍀, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 大厂-OneDrive🐬, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 代码-GitHub👨🏿‍💻, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 娱乐-游戏平台🎮, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 其他-非CNのIP, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: GLOBAL, type: select, proxies: [代理🟢, 直连⭕️, 拒绝⛔️]}
 
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
 #域名规则
-  - RULE-SET,proxylite_class,代理♻️
-  - DOMAIN-SUFFIX,qichiyu.com,代理♻️
+  - RULE-SET,proxylite_class,代理🟢
+  - DOMAIN-SUFFIX,qichiyu.com,代理🟢
   - RULE-SET,private_domain,直连⭕️
   - RULE-SET,speedtest_domain,工具-Speedtest✈️
+  - RULE-SET,ai_domain,AI-ChatGPT💡
+  - RULE-SET,Crypto_class,金融-数字货币🪙
+  - RULE-SET,telegram_domain,社交-Telegram📱
+  - RULE-SET,github_domain,代码-GitHub👨🏿‍💻
   - RULE-SET,netflix_domain,影音-奈飞🎥
   - RULE-SET,youtube_domain,影音-YouTube🎬
   - RULE-SET,tiktok_domain,影音-TikTok🎵
-  - RULE-SET,apple_domain,大厂-Apple🍎
   - RULE-SET,google_domain,大厂-Google🍀
   - RULE-SET,onedrive_domain,大厂-OneDrive🐬
-  - RULE-SET,microsoft_domain,大厂-微软🪟
-  - RULE-SET,ai_domain,AI-ChatGPT💡
-  - RULE-SET,github_domain,代码-GitHub👨🏿‍💻
-  - RULE-SET,telegram_domain,社交-Telegram📲
   - RULE-SET,paypal_domain,金融-PayPal💶
-  - RULE-SET,Crypto_class,金融-数字货币🪙
   - RULE-SET,game_class,娱乐-游戏平台🎮
+  - RULE-SET,microsoft_domain,大厂-微软🪟
+  - RULE-SET,apple_domain,大厂-Apple🍎
 
 #IP规则
-  - RULE-SET,gfw_domain,代理♻️
+  - RULE-SET,gfw_domain,代理🟢
   - RULE-SET,cn_domain,国内🇨🇳
   - RULE-SET,cn_ip,国内🇨🇳
   - RULE-SET,google_ip,大厂-Google🍀,no-resolve
   - RULE-SET,netflix_ip,影音-奈飞🎥,no-resolve
-  - RULE-SET,telegram_ip,社交-Telegram📲,no-resolve
+  - RULE-SET,telegram_ip,社交-Telegram📱,no-resolve
   - RULE-SET,geolocation-!cn,其他-非CNのIP,no-resolve
   - MATCH,GLOBAL
 
@@ -63,7 +63,7 @@ rule-anchor:
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
   proxylite_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/ProxyLite.list"}
-  Crypto_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Crypto.list"}
+  Crypto_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/Crypto.list"}
   game_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list"}
   game_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list"}
   game_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list"}
