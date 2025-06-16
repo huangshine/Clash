@@ -29,6 +29,7 @@ proxy-groups:
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
 #域名规则
+  - RULE-SET,my_class,直连⭕️
   - RULE-SET,docker_class,docker
   - RULE-SET,proxylite_class,代理🟢
   - DOMAIN-SUFFIX,qichiyu.com,代理🟢
@@ -68,6 +69,7 @@ rule-anchor:
   domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
+  my_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/no.list"}
   docker_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/docker.list"}
   proxylite_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/ProxyLite.list"}
   Crypto_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/Crypto.list"}
