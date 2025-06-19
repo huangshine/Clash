@@ -69,10 +69,10 @@ rule-anchor:
   domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
-  my_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/no.list"}
-  docker_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/docker.list"}
-  proxylite_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/ProxyLite.list"}
+  my_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/rules/my.list"}
+  docker_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/rules/docker.list"}
   Crypto_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/rules/Crypto.list"}
+  proxylite_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/ProxyLite.list"}
   game1_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list"}
   game2_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list"}
   game3_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list"}
