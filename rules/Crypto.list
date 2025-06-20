@@ -1,5 +1,8 @@
 # > Forum
 DOMAIN-SUFFIX,bitcointalk.org
+# > ip信息
+DOMAIN-SUFFIX,ipapi.is
+DOMAIN-SUFFIX,ipwho.is
 
 # > Alvey
 DOMAIN-SUFFIX,alveyscan.com
