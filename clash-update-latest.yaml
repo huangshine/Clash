@@ -1,7 +1,7 @@
 #节点信息
 proxies:
   - {name: 新加坡🚀, type: ss, server: , port: , password: , cipher: ,udp: }
-  - {name: Astrill☢️, type: socks5, server: , port: , username: , password: }
+  - {name: Astrill☢️, type: socks5, server: , port: , username: , password: ,udp:  }
   - {name: 直连⭕️, type: direct}
   - {name: 拒绝⛔️, type: reject}
 # 出站策略
