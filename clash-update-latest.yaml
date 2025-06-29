@@ -7,25 +7,25 @@ proxies:
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
-  - {name: 1-国内🇨🇳, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 2-自定义📌, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 3-docker, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 4-AI-ChatGPT💡, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 5-影音-YouTube🎬, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 5-影音-TikTok🎵, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 5-影音-奈飞🎥, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 6-工具-Speedtest✈️, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 7-社交-Telegram📱, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 8-金融-PayPal💶, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 8-金融-数字货币🪙, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 9-大厂-Apple🍎, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 9-大厂-微软🪟, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 9-大厂-Google🍀, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 9-大厂-OneDrive🐬, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 10-代码-GitHub👨🏿‍💻, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 11-娱乐-游戏平台🎮, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: 12-其他-非CNのIP, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
-  - {name: GLOBAL, type: select, proxies: [新加坡🚀,本地🟢, 直连⭕️, 拒绝⛔️]}
+  - {name: 1-国内🇨🇳, type: select, proxies: [本地🟢, 新加坡🚀,直连⭕️, 拒绝⛔️]}
+  - {name: 2-自定义📌, type: select, proxies: [本地🟢,新加坡🚀, 直连⭕️, 拒绝⛔️]}
+  - {name: 3-docker, type: select, proxies: [本地🟢,新加坡🚀, 直连⭕️, 拒绝⛔️]}
+  - {name: 4-AI-ChatGPT💡, type: select, proxies: [本地🟢, 新加坡🚀,直连⭕️, 拒绝⛔️]}
+  - {name: 5-影音-YouTube🎬, type: select, proxies: [本地🟢, 新加坡🚀,直连⭕️, 拒绝⛔️]}
+  - {name: 5-影音-TikTok🎵, type: select, proxies: [本地🟢, 新加坡🚀,直连⭕️, 拒绝⛔️]}
+  - {name: 5-影音-奈飞🎥, type: select, proxies: [本地🟢,新加坡🚀, 直连⭕️, 拒绝⛔️]}
+  - {name: 6-工具-Speedtest✈️, type: select, proxies: [本地🟢,新加坡🚀, 直连⭕️, 拒绝⛔️]}
+  - {name: 7-社交-Telegram📱, type: select, proxies: [本地🟢, 新加坡🚀,直连⭕️, 拒绝⛔️]}
+  - {name: 8-金融-PayPal💶, type: select, proxies: [本地🟢,新加坡🚀, 直连⭕️, 拒绝⛔️]}
+  - {name: 8-金融-数字货币🪙, type: select, proxies: [本地🟢,新加坡🚀, 直连⭕️, 拒绝⛔️]}
+  - {name: 9-大厂-Apple🍎, type: select, proxies: [本地🟢, 新加坡🚀,直连⭕️, 拒绝⛔️]}
+  - {name: 9-大厂-微软🪟, type: select, proxies: [本地🟢, 新加坡🚀,直连⭕️, 拒绝⛔️]}
+  - {name: 9-大厂-Google🍀, type: select, proxies: [本地🟢, 新加坡🚀,直连⭕️, 拒绝⛔️]}
+  - {name: 9-大厂-OneDrive🐬, type: select, proxies: [本地🟢,新加坡🚀, 直连⭕️, 拒绝⛔️]}
+  - {name: 10-代码-GitHub👨🏿‍💻, type: select, proxies: [本地🟢,新加坡🚀, 直连⭕️, 拒绝⛔️]}
+  - {name: 11-娱乐-游戏平台🎮, type: select, proxies: [本地🟢, 新加坡🚀,直连⭕️, 拒绝⛔️]}
+  - {name: 12-其他-非CNのIP, type: select, proxies: [本地🟢,新加坡🚀, 直连⭕️, 拒绝⛔️]}
+  - {name: GLOBAL, type: select, proxies: [本地🟢, 新加坡🚀,直连⭕️, 拒绝⛔️]}
 
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
