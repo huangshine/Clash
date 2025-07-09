@@ -111,26 +111,25 @@ proxies:
   - {name: a48, server:, port: 443, client-fingerprint: , type: trojan, password: , sni: , skip-cert-verify: true, network: ws, ws-opts: {path: "", headers: {Host: }}}
   - {name: a49, server:, port: 443, client-fingerprint: , type: trojan, password: , sni: , skip-cert-verify: true, network: ws, ws-opts: {path: "", headers: {Host: }}}
   - {name: a50, server:, port: 443, client-fingerprint: , type: trojan, password: , sni: , skip-cert-verify: true, network: ws, ws-opts: {path: "", headers: {Host: }}}
-  - {"type":"vless","name”:”b1-tls,”server":"","port":,"uuid":"","skip-cert-verify":true,"network":"tcp","flow":"","servername":"","tls":false,"udp":true}
-  - {"type":"vmess","name”:”b2”,”ws-opts":{"path":""},"server":"","port":"62893","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name”:”b3-tls”,”ws-opts":{"path":"","headers":{"host":""}},"server":"","port":"8443","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name”:”b4”,”wi-opts":{"path":"","headers":{"host":""}},"server":"","port":"8880","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vless","name”:”b5-tls”,”server":"","port":,"uuid":"","skip-cert-verify":true,"network":"tcp","flow":"","servername":"","tls":false,"udp":true}
-  - {"type":"vmess","name”:”b6”,”ws-opts":{"path":""},"server":"","port":"62893","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vless","name”:”b7-tls”,”server":".237","port":,"uuid":"","skip-cert-verify":true,"network":"tcp","flow":"","servername":"","tls":false,"udp":true}
-  - {"type":"vmess","name”:”b8”,”ws-opts":{"path":""},"server":".237","port":"62893","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name”:”b9-tls”,”ws-opts":{"path":"","headers":{"host":""}},"server":"104.16.0.0","port":"443","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name”:”b10-tls”,”ws-opts":{"path":"","headers":{"host":""}},"server":"104.17.0.0","port":"2053","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name”:”b11-tls”,”ws-opts":{"path":"","headers":{"host":""}},"server":"104.18.0.0","port":"2083","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name”:”b12-tls”,”ws-opts":{"path":"","headers":{"host":""}},"server":"","port":"2087","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name”:”b13-tls”,”ws-opts":{"path":"","headers":{"host":""}},"server":".0.0","port":"2096","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name”:”b14”,”ws-opts":{"path":"","headers":{"host":""}},"server":"104.21.0.0","port":"80","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name”:”b15”,”ws-opts":{"path":"","headers":{"host":""}},"server":"104.22.0.0","port":"8080","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name”:”b16”,”ws-opts":{"path":"","headers":{"host":""}},"server":"104.24.0.0","port":"2052","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name”:”b17”,”ws-opts":{"path":"","headers":{"host":""}},"server":"104.25.0.0","port":"2082","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name”:”b18”,”ws-opts":{"path":"","headers":{"host":""}},"server":"104.26.0.0","port":"2086","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"vmess","name”:”b19”,”ws-opts":{"path":"","headers":{"host":""}},"server":"104.27.0.0","port":"2095","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
-
+  - {"type":"vless","name":"b1-tls,"server":"","port":,"uuid":"","skip-cert-verify":true,"network":"tcp","flow":"","servername":"","tls":false,"udp":true}
+  - {"type":"vmess","name":"b2","ws-opts":{"path":""},"server":"","port":"62893","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"b3-tls","ws-opts":{"path":"","headers":{"host":""}},"server":"","port":"8443","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"b4","wi-opts":{"path":"","headers":{"host":""}},"server":"","port":"8880","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vless","name":"b5-tls","server":"","port":,"uuid":"","skip-cert-verify":true,"network":"tcp","flow":"","servername":"","tls":false,"udp":true}
+  - {"type":"vmess","name":"b6","ws-opts":{"path":""},"server":"","port":"62893","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vless","name":"b7-tls","server":".237","port":,"uuid":"","skip-cert-verify":true,"network":"tcp","flow":"","servername":"","tls":false,"udp":true}
+  - {"type":"vmess","name":"b8","ws-opts":{"path":""},"server":".237","port":"62893","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"b9-tls","ws-opts":{"path":"","headers":{"host":""}},"server":"104.16.0.0","port":"443","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"b10-tls","ws-opts":{"path":"","headers":{"host":""}},"server":"104.17.0.0","port":"2053","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"b11-tls","ws-opts":{"path":"","headers":{"host":""}},"server":"104.18.0.0","port":"2083","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"b12-tls","ws-opts":{"path":"","headers":{"host":""}},"server":"","port":"2087","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"b13-tls","ws-opts":{"path":"","headers":{"host":""}},"server":".0.0","port":"2096","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"b14","ws-opts":{"path":"","headers":{"host":""}},"server":"104.21.0.0","port":"80","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"b15","ws-opts":{"path":"","headers":{"host":""}},"server":"104.22.0.0","port":"8080","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"b16","ws-opts":{"path":"","headers":{"host":""}},"server":"104.24.0.0","port":"2052","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"b17","ws-opts":{"path":"","headers":{"host":""}},"server":"104.25.0.0","port":"2082","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"b18","ws-opts":{"path":"","headers":{"host":""}},"server":"104.26.0.0","port":"2086","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"b19","ws-opts":{"path":"","headers":{"host":""}},"server":"104.27.0.0","port":"2095","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
 
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
