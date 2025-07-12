@@ -3,7 +3,8 @@ proxies:
   - {name: 爪云-L, type: hysteria2, server: , port: ,skip-cert-verify: , password: }
   - {name: 直连⭕️, type: direct}
   - {name: 拒绝⛔️, type: reject}
-  - {"type":"vless","name":爪云-L,b1-tls,"server":"","port":49994,"uuid":"","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"","tls":false,"udp":true}
+  - {"type":"trojan","name":"","server":"","port":,"password":"","udp":true,"":true,"sni":"","network":""}
+  - {"type":"vless","name":爪云-L,b1-tls,"server":"","port":49994,"uuid":"","skip-cert-verify":true,"network":"tcp","flow":"","servername":"","tls":false,"udp":true}
   - {"type":"vmess","name":b2,"ws-opts":{"path":"/"},"server":"","port":"62893","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
   - {"type":"vmess","name":b3-tls,"ws-opts":{"path":"/","headers":{"host":""}},"server":"","port":"8443","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":b4,"ws-opts":{"path":"/","headers":{"host":""}},"server":"","port":"8880","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
