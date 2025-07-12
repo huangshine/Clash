@@ -1,0 +1,117 @@
+proxies:
+  - {name: Astrill☢️, type: socks5, server: , port: , username: , password: ,udp:  }
+  - {name: 爪云-L, type: hysteria2, server: , port: ,skip-cert-verify: , password: }
+  - {name: 意大利轻量, type: hysteria2, server: , port:, skip-cert-verify:, password: }
+  - {name: 德国轻量, type: hysteria2, server: , port:, skip-cert-verify:, password: }
+  - {name: 直连⭕️, type: direct}
+  - {name: 拒绝⛔️, type: reject}
+  - {"type":"vmess","name":b2,"ws-opts":{"path":"/"},"server":"","port":"62893","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":b3-tls,"ws-opts":{"path":"/","headers":{"host":""}},"server":"","port":"8443","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":b4,"ws-opts":{"path":"/","headers":{"host":""}},"server":"","port":"8880","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":b6,"ws-opts":{"path":"/"},"server":"","port":"62893","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":b8,"ws-opts":{"path":"/"},"server":"","port":"62893","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":b9-tls,"ws-opts":{"path":"/","headers":{"host":""}},"server":"16.0.0","port":"443","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":b10-tls,"ws-opts":{"path":"/","headers":{"host":""}},"server":"17.0.0","port":"2053","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":b11-tls,"ws-opts":{"path":"/","headers":{"host":""}},"server":"18.0.0","port":"2083","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":b12-tls,"ws-opts":{"path":"/","headers":{"host":""}},"server":"19.0.0","port":"2087","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":b13-tls,"ws-opts":{"path":"/","headers":{"host":""}},"server":"20.0.0","port":"2096","uuid":"","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":b14,"ws-opts":{"path":"/","headers":{"host":""}},"server":"21.0.0","port":"80","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":b15,"ws-opts":{"path":"/","headers":{"host":""}},"server":"22.0.0","port":"8080","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":b16,"ws-opts":{"path":"/","headers":{"host":""}},"server":"24.0.0","port":"2052","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":b17,"ws-opts":{"path":"/","headers":{"host":""}},"server":"25.0.0","port":"2082","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":b18,"ws-opts":{"path":"/","headers":{"host":""}},"server":"26.0.0","port":"2086","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":bb19,"ws-opts":{"path":"/","headers":{"host":""}},"server":"27.0.0","port":"2095","uuid":"","alterId":"0","cipher":"auto","network":"ws"}
+  # 出站策略
+# 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
+proxy-groups:
+  - {name: 1-国内🇨🇳, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 2-自定义📌, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 3-docker, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 4-AI-ChatGPT💡, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 5-影音-YouTube🎬, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 5-影音-TikTok🎵, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 5-影音-奈飞🎥, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 6-工具-Speedtest✈️, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 7-社交-Telegram📱, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 8-金融-PayPal💶, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 8-金融-数字货币🪙, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 9-大厂-Apple🍎, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 9-大厂-微软🪟, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 9-大厂-Google🍀, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 9-大厂-OneDrive🐬, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: X-代码-GitHub👨🏿‍💻, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: XI-娱乐-游戏平台🎮, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: XII-其他-非CNのIP, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: GLOBAL, type: select, proxies: [Astrill☢️,直连⭕️,拒绝⛔️,爪云-L,意大利轻量,德国轻量,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+# 规则匹配
+# 此规则部分没有做防泄露处理，因为弊严重大于利！
+rules:
+#域名规则
+  - RULE-SET,my_class,1-国内🇨🇳
+  - RULE-SET,private_domain,1-国内🇨🇳
+  - RULE-SET,docker_class,3-docker
+  - RULE-SET,proxylite_class,2-自定义📌
+  - RULE-SET,speedtest_domain,6-工具-Speedtest✈️
+  - RULE-SET,ai_domain,4-AI-ChatGPT💡
+  - RULE-SET,Crypto_class,8-金融-数字货币🪙
+  - RULE-SET,telegram_domain,7-社交-Telegram📱
+  - RULE-SET,github_domain,X-代码-GitHub👨🏿‍💻
+  - RULE-SET,netflix_domain,5-影音-奈飞🎥
+  - RULE-SET,youtube_domain,5-影音-YouTube🎬
+  - RULE-SET,tiktok_domain,5-影音-TikTok🎵
+  - RULE-SET,google_domain,9-大厂-Google🍀
+  - RULE-SET,onedrive_domain,9-大厂-OneDrive🐬
+  - RULE-SET,paypal_domain,8-金融-PayPal💶
+  - RULE-SET,game1_class,XI-娱乐-游戏平台🎮
+  - RULE-SET,game2_class,XI-娱乐-游戏平台🎮
+  - RULE-SET,game3_class,XI-娱乐-游戏平台🎮
+  - RULE-SET,game4_class,XI-娱乐-游戏平台🎮
+  - RULE-SET,game5_class,XI-娱乐-游戏平台🎮
+  - RULE-SET,microsoft_domain,9-大厂-微软🪟
+  - RULE-SET,apple_domain,9-大厂-Apple🍎
+
+#IP规则
+  - RULE-SET,gfw_domain,2-自定义📌
+  - RULE-SET,cn_domain,1-国内🇨🇳
+  - RULE-SET,cn_ip,1-国内🇨🇳
+  - RULE-SET,google_ip,9-大厂-Google🍀,no-resolve
+  - RULE-SET,netflix_ip,5-影音-奈飞🎥,no-resolve
+  - RULE-SET,telegram_ip,7-社交-Telegram📱,no-resolve
+  - RULE-SET,geolocation-!cn,XII-其他-非CNのIP,no-resolve
+  - MATCH,GLOBAL
+
+# 规则集
+rule-anchor:
+  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
+  domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
+  class: &class {type: http, interval: 86400, behavior: classical, format: text}
+rule-providers: 
+  my_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/rules/my.list"}
+  docker_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/rules/docker.list"}
+  Crypto_class: { <<: *class, url: "https://raw.githubusercontent.com/huangshine/Clash/refs/heads/main/rules/Crypto.list"}
+  proxylite_class: { <<: *class, url: "https://raw.githubusercontent.com/LoveTINTIN/ClashRules/refs/heads/main/ProxyLite.list"}
+  game1_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list"}
+  game2_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list"}
+  game3_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list"}
+  game4_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list"}
+  game5_class: { <<: *class, url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list"}
+  private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
+  ai_domain: {  <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs" }
+  youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
+  google_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
+  github_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
+  telegram_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
+  netflix_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
+  paypal_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"}
+  onedrive_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
+  microsoft_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
+  apple_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs"}
+  speedtest_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ookla-speedtest.mrs"}
+  tiktok_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"}
+  gfw_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.mrs"}
+  geolocation-!cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
+  cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
+  cn_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
+  google_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
+  telegram_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
+  netflix_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"}
