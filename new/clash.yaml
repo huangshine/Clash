@@ -42,7 +42,7 @@ proxy-groups:
   - {name: 9-OneDrive, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
   - {name: X-GitHub, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
   - {name: XI-游戏平台, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: XII-其他-非CNのIP, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: XII-非CNのIP, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
   - {name: GLOBAL, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
@@ -78,7 +78,7 @@ rules:
   - RULE-SET,google_ip,9-Google,no-resolve
   - RULE-SET,netflix_ip,5-奈飞,no-resolve
   - RULE-SET,telegram_ip,7-Telegram,no-resolve
-  - RULE-SET,geolocation-!cn,XII-其他-非CNのIP,no-resolve
+  - RULE-SET,geolocation-!cn,XII-非CNのIP,no-resolve
   - MATCH,GLOBAL
 
 # 规则集
