@@ -26,7 +26,7 @@ proxies:
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
   - {name: 1-国内🇨🇳, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: 2-自定义📌, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 2-自定义墙📌, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
   - {name: 3-docker, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
   - {name: 4-AI-ChatGPT💡, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
   - {name: 5-影音-YouTube🎬, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
@@ -51,7 +51,7 @@ rules:
   - RULE-SET,my_class,1-国内🇨🇳
   - RULE-SET,private_domain,1-国内🇨🇳
   - RULE-SET,docker_class,3-docker
-  - RULE-SET,proxylite_class,2-自定义📌
+  - RULE-SET,proxylite_class,2-自定义墙📌
   - RULE-SET,speedtest_domain,6-工具-Speedtest✈️
   - RULE-SET,ai_domain,4-AI-ChatGPT💡
   - RULE-SET,Crypto_class,8-金融-数字货币🪙
