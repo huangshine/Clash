@@ -25,59 +25,59 @@ proxies:
   # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
-  - {name: 1-国内🇨🇳, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: 2-自定义墙📌, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 1-国内, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 2-自定义墙, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
   - {name: 3-docker, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: 4-AI-ChatGPT💡, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: 5-影音-YouTube🎬, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: 5-影音-TikTok🎵, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: 5-影音-奈飞🎥, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: 6-工具-Speedtest✈️, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: 7-社交-Telegram📱, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: 8-金融-PayPal💶, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: 8-金融-数字货币🪙, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: 9-大厂-Apple🍎, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: 9-大厂-微软🪟, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: 9-大厂-Google🍀, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: 9-大厂-OneDrive🐬, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: X-代码-GitHub👨🏿‍💻, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
-  - {name: XI-娱乐-游戏平台🎮, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 4-AI, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 5-YouTube, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 5-TikTok, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 5-奈飞, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 6-Speedtest, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 7-Telegram, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 8-PayPal, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 8-数字货币, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 9-Apple, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 9-微软, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 9-Google, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: 9-OneDrive, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: X-GitHub, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
+  - {name: XI-游戏平台, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
   - {name: XII-其他-非CNのIP, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
   - {name: GLOBAL, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,爪云-L🇯🇵,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪,b2,b3-tls,b4,b6,b8,b9-tls,b10-tls,b11-tls,b12-tls,b13-tls,b14,b15,b16,b17,b18,b19]}
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
 #域名规则
-  - RULE-SET,my_class,1-国内🇨🇳
-  - RULE-SET,private_domain,1-国内🇨🇳
+  - RULE-SET,my_class,1-国内
+  - RULE-SET,private_domain,1-国内
   - RULE-SET,docker_class,3-docker
-  - RULE-SET,proxylite_class,2-自定义墙📌
-  - RULE-SET,speedtest_domain,6-工具-Speedtest✈️
-  - RULE-SET,ai_domain,4-AI-ChatGPT💡
-  - RULE-SET,Crypto_class,8-金融-数字货币🪙
-  - RULE-SET,telegram_domain,7-社交-Telegram📱
-  - RULE-SET,github_domain,X-代码-GitHub👨🏿‍💻
-  - RULE-SET,netflix_domain,5-影音-奈飞🎥
-  - RULE-SET,youtube_domain,5-影音-YouTube🎬
-  - RULE-SET,tiktok_domain,5-影音-TikTok🎵
-  - RULE-SET,google_domain,9-大厂-Google🍀
-  - RULE-SET,onedrive_domain,9-大厂-OneDrive🐬
-  - RULE-SET,paypal_domain,8-金融-PayPal💶
-  - RULE-SET,game1_class,XI-娱乐-游戏平台🎮
-  - RULE-SET,game2_class,XI-娱乐-游戏平台🎮
-  - RULE-SET,game3_class,XI-娱乐-游戏平台🎮
-  - RULE-SET,game4_class,XI-娱乐-游戏平台🎮
-  - RULE-SET,game5_class,XI-娱乐-游戏平台🎮
-  - RULE-SET,microsoft_domain,9-大厂-微软🪟
-  - RULE-SET,apple_domain,9-大厂-Apple🍎
+  - RULE-SET,proxylite_class,2-自定义墙
+  - RULE-SET,speedtest_domain,6-Speedtest
+  - RULE-SET,ai_domain,4-AI
+  - RULE-SET,Crypto_class,8-数字货币
+  - RULE-SET,telegram_domain,7-Telegram
+  - RULE-SET,github_domain,X-GitHub
+  - RULE-SET,netflix_domain,5-奈飞
+  - RULE-SET,youtube_domain,5-YouTube
+  - RULE-SET,tiktok_domain,5-TikTok
+  - RULE-SET,google_domain,9-Google
+  - RULE-SET,onedrive_domain,9-OneDrive
+  - RULE-SET,paypal_domain,8-PayPal
+  - RULE-SET,game1_class,XI-游戏平台
+  - RULE-SET,game2_class,XI-游戏平台
+  - RULE-SET,game3_class,XI-游戏平台
+  - RULE-SET,game4_class,XI-游戏平台
+  - RULE-SET,game5_class,XI-游戏平台
+  - RULE-SET,microsoft_domain,9-微软
+  - RULE-SET,apple_domain,9-Apple
 
 #IP规则
-  - RULE-SET,gfw_domain,2-自定义墙📌
-  - RULE-SET,cn_domain,1-国内🇨🇳
-  - RULE-SET,cn_ip,1-国内🇨🇳
-  - RULE-SET,google_ip,9-大厂-Google🍀,no-resolve
-  - RULE-SET,netflix_ip,5-影音-奈飞🎥,no-resolve
-  - RULE-SET,telegram_ip,7-社交-Telegram📱,no-resolve
+  - RULE-SET,gfw_domain,2-自定义墙
+  - RULE-SET,cn_domain,1-国内
+  - RULE-SET,cn_ip,1-国内
+  - RULE-SET,google_ip,9-Google,no-resolve
+  - RULE-SET,netflix_ip,5-奈飞,no-resolve
+  - RULE-SET,telegram_ip,7-Telegram,no-resolve
   - RULE-SET,geolocation-!cn,XII-其他-非CNのIP,no-resolve
   - MATCH,GLOBAL
 
