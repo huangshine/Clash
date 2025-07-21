@@ -72,7 +72,7 @@ rules:
   - RULE-SET,apple_domain,9-大厂-Apple🍎
 
 #IP规则
-  - RULE-SET,gfw_domain,2-自定义📌
+  - RULE-SET,gfw_domain,2-自定义墙📌
   - RULE-SET,cn_domain,1-国内🇨🇳
   - RULE-SET,cn_ip,1-国内🇨🇳
   - RULE-SET,google_ip,9-大厂-Google🍀,no-resolve
