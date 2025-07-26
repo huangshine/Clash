@@ -30,8 +30,20 @@ proxy-groups:
   - {name: XII-非CNのIP, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
   - {name: 自动选择, type: url-test, proxies: [爪云-L🇯🇵,荷兰🇳🇱, 意大利轻量🇮🇹, 德国轻量🇩🇪, 德国轻量2🇩🇪], url: "http://www.apple.com/library/test/success.html", interval: 300, tolerance: 30, lazy: true}
   - {name: GLOBAL, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 智能选择,type: smart,strategy: sticky-sessions,uselightgbm: true,collectdata: false,include-all: true,interval: 300,policy-priority: "Astrill☢️:1.5;德国轻量🇩🇪:1.3;德国轻量2🇩🇪:1;意大利轻量🇮🇹:1.2;荷兰🇳🇱:1.1;爪云-L🇯🇵:1.0"}
-#  - {name: 负载均衡, type: load-balance, proxies: [Astrill☢️,爪云-L🇯🇵,荷兰🇳🇱, 意大利轻量🇮🇹, 德国轻量🇩🇪, 德国轻量2🇩🇪], url: "http://www.apple.com/library/test/success.html", interval: 300, strategy: consistent-hashing, persistent: true}
+  - name: 智能选择
+    type: smart
+    strategy: sticky-sessions
+    uselightgbm: true
+    collectdata: false
+    include-all: true
+    interval: 180
+    health-check:
+      enable: true
+      url: http://www.apple.com/library/test/success.html
+      interval: 60
+      tolerance: 2
+    policy-priority: "Astrill☢️:1.5;德国轻量🇩🇪:1.3;德国轻量2🇩🇪:1;意大利轻量🇮🇹:1.2;荷兰🇳🇱:1.1;爪云-L🇯🇵:1.0"
+      #  - {name: 负载均衡, type: load-balance, proxies: [Astrill☢️,爪云-L🇯🇵,荷兰🇳🇱, 意大利轻量🇮🇹, 德国轻量🇩🇪, 德国轻量2🇩🇪], url: "http://www.apple.com/library/test/success.html", interval: 300, strategy: consistent-hashing, persistent: true}
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
