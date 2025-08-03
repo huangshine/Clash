@@ -10,40 +10,40 @@ proxies:
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
-  - {name: 1-国内, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 2-自定义墙, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 3-docker, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 4-AI, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 5-YouTube, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 5-TikTok, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 5-奈飞, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 6-Speedtest, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 7-Telegram, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 8-PayPal, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 8-数字货币, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 9-Apple, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 9-微软, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 9-Google, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 9-OneDrive, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: X-GitHub, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: XI-游戏平台, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: XII-非CNのIP, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 自动选择, type: url-test, proxies: [爪云-L🇯🇵,荷兰🇳🇱, 意大利轻量🇮🇹, 德国轻量🇩🇪, 德国轻量2🇩🇪], url: "http://www.apple.com/library/test/success.html", interval: 300, tolerance: 30, lazy: true}
-  - {name: GLOBAL, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,自动选择,智能选择,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - name: 智能选择
+  - {name: 1-国内, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 2-自定义墙, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 3-docker, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 4-AI, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 5-YouTube, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 5-TikTok, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 5-奈飞, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 6-Speedtest, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 7-Telegram, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 8-PayPal, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 8-数字货币, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 9-Apple, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 9-微软, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 9-Google, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 9-OneDrive, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: X-GitHub, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: XI-游戏平台, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: XII-非CNのIP, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 延迟最小, type: url-test, proxies: [爪云-L🇯🇵,荷兰🇳🇱, 意大利轻量🇮🇹, 德国轻量🇩🇪, 德国轻量2🇩🇪], url: "http://www.apple.com/library/test/success.html", interval: 300, tolerance: 30, lazy: true}
+  - {name: GLOBAL, type: select, proxies: [直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - name: 负载均衡
     type: smart
     strategy: sticky-sessions
     uselightgbm: true
-    collectdata: false
     include-all: true
+    collectdata: false
     interval: 180
     health-check:
       enable: true
       url: http://www.apple.com/library/test/success.html
       interval: 60
       tolerance: 2
-    policy-priority: "Astrill☢️:1.5;德国轻量🇩🇪:1.3;德国轻量2🇩🇪:1;意大利轻量🇮🇹:1.2;荷兰🇳🇱:1.1;爪云-L🇯🇵:1.0"
-      #  - {name: 负载均衡, type: load-balance, proxies: [Astrill☢️,爪云-L🇯🇵,荷兰🇳🇱, 意大利轻量🇮🇹, 德国轻量🇩🇪, 德国轻量2🇩🇪], url: "http://www.apple.com/library/test/success.html", interval: 300, strategy: consistent-hashing, persistent: true}
+    policy-priority: "德国轻量🇩🇪:1.3;德国轻量2🇩🇪:1;意大利轻量🇮🇹:1.2;荷兰🇳🇱:1.1;爪云-L🇯🇵:1.0"
+      #  - {name: 负载均衡, type: load-balance, proxies: [爪云-L🇯🇵,荷兰🇳🇱, 意大利轻量🇮🇹, 德国轻量🇩🇪, 德国轻量2🇩🇪], url: "http://www.apple.com/library/test/success.html", interval: 300, strategy: consistent-hashing, persistent: true}
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
