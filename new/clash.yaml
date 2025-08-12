@@ -11,25 +11,25 @@ proxies:
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
-  - {name: 1-国内, type: select, proxies: [阿里云,Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 2-自定义墙, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 3-docker, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 4-AI, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 5-YouTube, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 5-TikTok, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 5-奈飞, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 6-Speedtest, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 7-Telegram, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 8-PayPal, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 8-数字货币, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 9-Apple, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 9-微软, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 9-Google, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: 9-OneDrive, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: X-GitHub, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: XI-游戏平台, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: XII-非CNのIP, type: select, proxies: [Astrill☢️,直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
-  - {name: GLOBAL, type: select, proxies: [直连🇨🇳,拒绝⛔️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 1-国内, type: select, proxies: [直连🇨🇳,拒绝⛔️,阿里云,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 2-自定义墙, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 3-docker, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 4-AI, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 5-YouTube, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 5-TikTok, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 5-奈飞, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 6-Speedtest, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 7-Telegram, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 8-PayPal, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 8-数字货币, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 9-Apple, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 9-微软, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 9-Google, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: 9-OneDrive, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: X-GitHub, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: XI-游戏平台, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: XII-非CNのIP, type: select, proxies: [直连🇨🇳,拒绝⛔️,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
+  - {name: GLOBAL, type: select, proxies: [直连🇨🇳,拒绝⛔️,阿里云,,Astrill☢️,延迟最小,负载均衡,爪云-L🇯🇵,荷兰🇳🇱,意大利轻量🇮🇹,德国轻量🇩🇪,德国轻量2🇩🇪]}
 
   - name: 负载均衡
     type: smart
