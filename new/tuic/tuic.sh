@@ -3,9 +3,9 @@
 set -e
 
 echo ">>> 安装依赖..."
-apk add --no-cache curl wget tar bash uuidgen openssl socat
+apk add --no-cache curl wget bash uuidgen openssl socat
 
-echo ">>> 下载 TUIC x86_64-musl 最新稳定版本..."
+echo ">>> 下载 TUIC x86_64-musl 二进制..."
 TUIC_VERSION="1.0.0"
 DOWNLOAD_URL="https://github.com/tuic-protocol/tuic/releases/download/${TUIC_VERSION}/tuic-server-${TUIC_VERSION}-x86_64-unknown-linux-musl"
 
