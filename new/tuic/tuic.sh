@@ -7,7 +7,7 @@ apk add --no-cache curl wget bash uuidgen openssl socat
 
 echo ">>> 下载 TUIC x86_64-musl 二进制..."
 TUIC_VERSION="1.0.0"
-DOWNLOAD_URL="https://github.com/tuic-protocol/tuic/releases/download/${TUIC_VERSION}/tuic-server-${TUIC_VERSION}-x86_64-unknown-linux-musl"
+DOWNLOAD_URL="https://github.com/tuic-protocol/tuic/releases/download/tuic-server-1.0.0/tuic-server-1.0.0-x86_64-unknown-linux-musl"
 
 wget -O /usr/local/bin/tuic-server "$DOWNLOAD_URL"
 chmod +x /usr/local/bin/tuic-server
