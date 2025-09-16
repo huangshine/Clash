@@ -9,9 +9,8 @@ echo ">>> 下载 TUIC x86_64-musl 二进制..."
 TUIC_VERSION="1.0.0"
 DOWNLOAD_URL="https://github.com/tuic-protocol/tuic/releases/download/${TUIC_VERSION}/tuic-server-${TUIC_VERSION}-x86_64-unknown-linux-musl"
 
-wget -O tuic-server "$DOWNLOAD_URL"
-chmod +x tuic-server
-mv tuic-server /usr/local/bin/tuic-server
+wget -O /usr/local/bin/tuic-server "$DOWNLOAD_URL"
+chmod +x /usr/local/bin/tuic-server
 
 echo ">>> 创建配置目录..."
 mkdir -p /etc/tuic
