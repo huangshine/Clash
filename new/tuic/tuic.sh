@@ -17,7 +17,7 @@ fi
 echo ">>> 最新版本: $TUIC_VERSION"
 
 echo ">>> 下载 TUIC $TUIC_VERSION ..."
-DOWNLOAD_URL="https://github.com/tuic-protocol/tuic/releases/download/${TUIC_VERSION}/tuic-server-${TUIC_VERSION}-x86_64-unknown-linux-musl.tar.gz"
+DOWNLOAD_URL="https://github.com/tuic-protocol/tuic/releases/download/${TUIC_VERSION}/${TUIC_VERSION}-x86_64-unknown-linux-musl"
 wget -O tuic.tar.gz "$DOWNLOAD_URL"
 
 echo ">>> 解压并安装..."
