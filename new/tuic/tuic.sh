@@ -6,15 +6,15 @@ echo ">>> 安装依赖..."
 apk add --no-cache curl wget tar jq bash uuidgen openssl socat
 
 echo ">>> 获取 TUIC 最新版本..."
-TUIC_VERSION=$(curl -s https://api.github.com/repos/tuic-protocol/tuic/releases/latest | jq -r .tag_name)
+TUIC_VERSION=$(wget -qO- "https://api.github.com/repos/tuic-protocol/tuic/releases/latest" | grep '"tag_name"' | head -n 1 | cut -d '"' -f 4)
 
-if [ -z "$TUIC_VERSION" ] || [ "$TUIC_VERSION" = "null" ]; then
-    echo "获取 TUIC 版本失败，请检查 GitHub API 或网络"
+if [ -z "$TUIC_VERSION" ]; then
+    echo "获取 TUIC 版本失败，请检查网络或 GitHub API"
     exit 1
 fi
 
 echo ">>> 下载 TUIC $TUIC_VERSION ..."
-wget -O tuic.tar.gz https://github.com/tuic-protocol/tuic/releases/download/${TUIC_VERSION}/tuic-server-${TUIC_VERSION}-x86_64-unknown-linux-musl.tar.gz
+wget -O tuic.tar.gz "https://github.com/tuic-protocol/tuic/releases/download/${TUIC_VERSION}/tuic-server-${TUIC_VERSION}-x86_64-unknown-linux-musl.tar.gz"
 tar -xzf tuic.tar.gz
 mv tuic-server /usr/local/bin/tuic-server
 chmod +x /usr/local/bin/tuic-server
