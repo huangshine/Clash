@@ -3,28 +3,15 @@
 set -e
 
 echo ">>> 安装依赖..."
-apk add --no-cache curl wget tar jq bash uuidgen openssl socat
+apk add --no-cache curl wget tar bash uuidgen openssl socat
 
-echo ">>> 获取 TUIC 最新版本..."
-TUIC_VERSION=$(wget -qO- https://api.github.com/repos/tuic-protocol/tuic/releases/latest \
-  | grep '"tag_name"' | head -n 1 | cut -d '"' -f 4)
+echo ">>> 下载 TUIC x86_64-musl 最新稳定版本..."
+TUIC_VERSION="1.0.0"
+DOWNLOAD_URL="https://github.com/tuic-protocol/tuic/releases/download/${TUIC_VERSION}/tuic-server-${TUIC_VERSION}-x86_64-unknown-linux-musl"
 
-if [ -z "$TUIC_VERSION" ]; then
-    echo "获取 TUIC 版本失败，请检查网络或 GitHub API"
-    exit 1
-fi
-
-echo ">>> 最新版本: $TUIC_VERSION"
-
-echo ">>> 下载 TUIC $TUIC_VERSION ..."
-DOWNLOAD_URL="https://github.com/tuic-protocol/tuic/releases/download/${TUIC_VERSION}/${TUIC_VERSION}-x86_64-unknown-linux-musl"
-wget -O tuic.tar.gz "$DOWNLOAD_URL"
-
-echo ">>> 解压并安装..."
-tar -xzf tuic.tar.gz
+wget -O tuic-server "$DOWNLOAD_URL"
+chmod +x tuic-server
 mv tuic-server /usr/local/bin/tuic-server
-chmod +x /usr/local/bin/tuic-server
-rm -f tuic.tar.gz
 
 echo ">>> 创建配置目录..."
 mkdir -p /etc/tuic
