@@ -4,12 +4,12 @@
 
 <img width="64" height="64" alt="image" src="https://github.com/user-attachments/assets/a9844712-0b05-4210-b630-22ca0f4ddb53" />
 
-下载地址：
-https://karing.app/download/
+项目地址：
+https://karing.app
 
 2、Clash Verge
 
 <img width="64" height="64" alt="image" src="https://github.com/user-attachments/assets/813ef23d-dd36-4a43-9ac8-5f2949989031" />
 
-下载地址：
+项目地址：
 https://github.com/clash-verge-rev/clash-verge-rev
