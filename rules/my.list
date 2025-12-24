@@ -8,9 +8,11 @@ DOMAIN-SUFFIX,hulukk.vip
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
+#异地组网
 DOMAIN-KEYWORD,tailscale
 DOMAIN-KEYWORD,appsflyersdk
 DOMAIN-WILDCARD,gateimage.com
+#冰茶iptv
 DOMAIN-KEYWORD,188766
 DOMAIN-KEYWORD,ouyich
 DOMAIN-KEYWORD,yoozb
