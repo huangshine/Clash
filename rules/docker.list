@@ -1,4 +1,5 @@
 # > docker
+DOMAIN-KEYWORD,docker
 DOMAIN-SUFFIX,docker.io
 DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,registry-1.docker.io
