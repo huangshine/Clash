@@ -7,18 +7,18 @@
 +.hulukk.vip
 
 # 域名关键字匹配
-+.1e100
+DOMAIN-KEYWORD,1e100
 #异地组网
-+.tailscale
-+.appsflyersdk
+DOMAIN-KEYWORD,tailscale
+DOMAIN-KEYWORD,appsflyersdk
 +.gateimage.com
 #冰茶iptv
-+.188766
-+.ouyich
-+.yoozb
-+.cloudflare
+DOMAIN-KEYWORD,188766
+DOMAIN-KEYWORD,ouyich
+DOMAIN-KEYWORD,yoozb
+DOMAIN-KEYWORD,cloudflare
 #体育直播
-+.sportsteam368.com
+DOMAIN-KEYWORD,sportsteam368.com
 # IP段匹配
 #IP-CIDR,142.171.133.131/32,no-resolve
 #IP-CIDR,103.115.43.2/32,no-resolve
