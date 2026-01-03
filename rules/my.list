@@ -2,23 +2,23 @@
 # 代理补充列表
 
 # 域名后缀匹配
-+.huangshine.vip
-+.freecloud.ltd
-+.hulukk.vip
+DOMAIN-SUFFIX,huangshine.vip
+DOMAIN-SUFFIX,freecloud.ltd
+DOMAIN-SUFFIX,hulukk.vip
+DOMAIN-SUFFIX,sportsteam368.com
 
 # 域名关键字匹配
-+.1e100
+DOMAIN-KEYWORD,1e100
 #异地组网
-+.tailscale
-+.appsflyersdk
-+.gateimage.com
+DOMAIN-KEYWORD,tailscale
+DOMAIN-KEYWORD,appsflyersdk
+sportsteam368.comgateimage.com
 #冰茶iptv
-+.188766
-+.ouyich
-+.yoozb
-+.cloudflare
+DOMAIN-KEYWORD,188766
+DOMAIN-KEYWORD,ouyich
+DOMAIN-KEYWORD,yoozb
+DOMAIN-KEYWORD,cloudflare
 #体育直播
-+.sportsteam368.com
 # IP段匹配
 #IP-CIDR,142.171.133.131/32,no-resolve
 #IP-CIDR,103.115.43.2/32,no-resolve
