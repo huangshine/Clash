@@ -2,23 +2,23 @@
 # 代理补充列表
 
 # 域名后缀匹配
-DOMAIN-SUFFIX,huangshine.vip
-DOMAIN-SUFFIX,freecloud.ltd
-DOMAIN-SUFFIX,hulukk.vip
++.huangshine.vip
++.freecloud.ltd
++.hulukk.vip
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
 #异地组网
 DOMAIN-KEYWORD,tailscale
 DOMAIN-KEYWORD,appsflyersdk
-DOMAIN-WILDCARD,gateimage.com
++.gateimage.com
 #冰茶iptv
 DOMAIN-KEYWORD,188766
 DOMAIN-KEYWORD,ouyich
 DOMAIN-KEYWORD,yoozb
 DOMAIN-KEYWORD,cloudflare
 #体育直播
-DOMAIN-SUFFIX,sportsteam368.com
++.sportsteam368.com
 # IP段匹配
 #IP-CIDR,142.171.133.131/32,no-resolve
 #IP-CIDR,103.115.43.2/32,no-resolve
