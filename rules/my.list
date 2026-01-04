@@ -10,7 +10,7 @@ DOMAIN-SUFFIX,sportsteam368.com
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
 #异地组网
-DOMAIN-KEYWORD,tailscale
+# DOMAIN-KEYWORD,tailscale
 DOMAIN-KEYWORD,appsflyersdk
 DOMAIN-SUFFIX,comgateimage.com
 #冰茶iptv
